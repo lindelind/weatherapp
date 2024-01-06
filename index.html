@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Vädret.Nu</title>
+</head>
+<body>
+    <header>
+        <p id="sunrise-sunset"></p>
+        <p id="location-time"></p>
+    </header>
+    <div id="main-header">
+        <h2>Vädret.Nu</h2>
+        <img src="sol.png" id="website-pic" alt="sol">
+    </div>
+    <div class="search-field">
+        <input type="text" id="search-city" placeholder="Sök stad">
+        <i>eller</i>
+        <button id="weather-by-user-location-btn">Hämta väder via platsinformation</button>
+    </div>  
+        <p id="errormsg-platsinfo">Det gick ej att hämta platsinformation. Kontrollera om platsinformation är tillåtet och undersök om popupfönster är tillåtna i webbläsaren innan du försöker igen.</p>
+        <p id="error-message"></p>
+    <div class="container">
+	    <div id="today-content"></div>
+        <div id="forcast-content"></div>
+        <div id="buttons-container"></div>
+        <!-- <button id="prev-button">Föregående</button>
+        <button id="next-button">Nästa</button> -->
+    </div>
+    <footer>
+        <p id="last-update"></p>
+        <p id="timezone"></p>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAPDcrwFAiEca_Rl1_1Kup-vcWq5MeqQ0&libraries=places&callback=Function.prototype"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

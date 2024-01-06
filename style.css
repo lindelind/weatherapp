@@ -1,0 +1,146 @@
+body{
+    background-image: url('bakgrund2.jpg');
+    font-family: 'Poppins';
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-tab {
+    display: none;
+}
+
+.weather-tab.active {
+    display: block;
+}
+
+#errormsg-platsinfo {
+    text-align: center;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color:lightgrey;
+    color: black;
+    width: 320px;
+    height: 130px;
+    display: none;
+}
+
+#error-message {
+    text-align: center;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color:lightgrey;
+    color: black;
+    width: 320px;
+    height: 80px;
+    display: none;
+
+}
+
+#main-header {
+    display: flex;
+    justify-content: center;
+}
+
+#last-update, #location-time, #timezone{
+    text-align: center;
+}
+.search-field i {
+    margin-left: 3px;
+    margin-right: 3px;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 12px;
+    
+}
+
+.search-field {
+    text-align: center;
+    
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    
+}
+
+.pac-container .pac-item:hover {
+    cursor: pointer;
+  }
+
+#sunrise-sunset {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 30px;
+}
+
+#today-content, #tomorrow-content {
+    padding-top: 30px;
+
+}
+
+#website-pic, img {
+    /* width: 140px; */
+    width: 110px;
+}
+
+
+button, input {
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+input {
+    padding: 3px;
+}
+
+button {
+    background-color: rgb(112, 178, 219);
+    font-weight: bold;
+    font-family: 'poppins';
+    cursor: pointer;
+    color: black;
+}
+
+::placeholder {
+    color: grey;
+    font-family: 'poppins';
+}
+
+footer p {
+    font-size: 12px;
+}
+
+@media (max-width: 768px){
+
+    .container{
+        display: block;
+    }
+}
